@@ -5,18 +5,23 @@ Co należy zrobić?
 
 **1.** Instalacja systemu Git w Fedorze: 
 w terminalu maszyny wirtualnej piszemy: **sudo dnf install git -y**
+
 **2.** Można sprawdzić wersję Git-a: **git --version**
 Powinno wyświetlić "git version numer wersji"
+
 **3.** Konfiguracja użytkownika z Github:
 **git config --global user.name Twój login do serwisu Github(nie adres email)**
 **git config --global user.email Twój adres email połączony z Twoim kontem w serwisie Github**
+
 **4.** Konfigurację użytkownika można sprawdzić poleceniem : 
 **git config --list** Wówczas powinno się wyświetlić:
 user.name=nasz login do serwisu Github
 user.email=nasz adres email połaczony z kontem w serwisie Github
 itd.
 Jeśli wszystko się zgadza to znaczy, że dobrze skonfigurowaliśmy uzytkownika w maszynie wirtualnej z użytkownikiem w serwsie Github.
-**4.** Połączenie Git z Github
+
+**5.** Połączenie Git z Github
+
 **a.** Połączenie za pomocą protokołu **HTTPS(HyperText Transfer Protocol Secure)** 
 Jest to szyfrowany protokół do przesyłania danych w sieci. Dla odróżnienia **HTTP** jest protokołem do przesyłania danych w sieci ale nieszyfrowanym.
 Jak HTTPS działa w Git.
@@ -24,6 +29,7 @@ Jeśli w Git uzyjemy URL repozytorium w formacie:
 **https://github.com/user.name/repo.name.git** to Git łączy się z Github przez szyfrowany kanał HTTPS. Każda wymiana pull, push, fetch jest szyfrowana
 i bezpieczna. Należy wspomnieć, że Github nie używa już haseł do HTTPS. Dlatego przy połączeniu Git z Github przez HTTPS potrzebny jest **Personal Access Token**
 **(PAT)** zamiast zwykłego hasła użytkownika.
+
 **b.** Połączenie za pomocą klucza **SSH**
 Jest to bezpieczna metoda, która nie wymaga wpisywania loginu i tokena przy każdej próbie połączenia Git z Github. Np. niepotrzebne jest podawanie loginu ani
 tokena przy każdym przesłaniu na Github nowego repozytorium lub przy edytowaniu go.
