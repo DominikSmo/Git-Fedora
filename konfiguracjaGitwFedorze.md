@@ -37,10 +37,12 @@ Klucz **SSH** to para powiązanych ze sobą kluczy kryptograficznych używanych 
 logowania do serwerów lub uwierzytelniania w systemach takich jak Github.
 
 ## Wygenerowanie klucza SSH
+
 Należy użyć polecenia:
+
 **ssh-keygen -t abxxxxx -C user.email(z Github)**
 
-Klikamy Enter by zatwierdzić ścieżkę ~/.ssh/id_abxxxxx
+Klikamy Enter by zatwierdzić ścieżkę ** ~/.ssh/id_abxxxxx**
 Następnie należy wpisać hasło do klucza ale można pozostawić także puste pole.
 Klucz id_abxxxxx to klucz prywatny.
 Potrzebujemy pary kluczy: jeden to klucz prywatny, drugi to klucz publiczny **(id_abxxxxx.pub)**
