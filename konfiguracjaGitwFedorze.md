@@ -42,11 +42,15 @@ Należy użyć polecenia:
 
 **ssh-keygen -t abxxxxx -C user.email(z Github)**
 
-Klikamy Enter by zatwierdzić ścieżkę ** ~/.ssh/id_abxxxxx**
+Klikamy Enter by zatwierdzić ścieżkę 
+** ~/.ssh/id_abxxxxx**
+
 Następnie należy wpisać hasło do klucza ale można pozostawić także puste pole.
 Klucz id_abxxxxx to klucz prywatny.
-Potrzebujemy pary kluczy: jeden to klucz prywatny, drugi to klucz publiczny **(id_abxxxxx.pub)**
-Znajdziemy go w naszym katalogu domowym **~/.ssh/id_abxxxxx.pub**
+Potrzebujemy pary kluczy: jeden to klucz prywatny, drugi to klucz publiczny 
+**(id_abxxxxx.pub)**
+Znajdziemy go w naszym katalogu domowym 
+**~/.ssh/id_abxxxxx.pub**
 Wówczas należy go skopiować do serwisu Github:
 **Settings**
 **SSH and GPG keys**
