@@ -3,20 +3,20 @@
 Jeśli chcemy dodawać repozytoria do serwisu Github z poziomu wirtualnego Linuxa(w tym przypadku Fedory) to musimy mieć skonfigurowany Git w maszynie wirtualnej.
 Co należy zrobić?
 
-**1.**Instalacja systemu Git w Fedorze: 
+**1.** Instalacja systemu Git w Fedorze: 
 w terminalu maszyny wirtualnej piszemy: **sudo dnf install git -y**
 **2.** Można sprawdzić wersję Git-a: **git --version**
 Powinno wyświetlić "git version numer wersji"
-**3.**Konfiguracja użytkownika z Github:
+**3.** Konfiguracja użytkownika z Github:
 **git config --global user.name Twój login do serwisu Github(nie adres email)**
 **git config --global user.email Twój adres email połączony z Twoim kontem w serwisie Github**
-**4.**Konfigurację użytkownika można sprawdzić poleceniem : 
+**4.** Konfigurację użytkownika można sprawdzić poleceniem : 
 **git config --list** Wówczas powinno się wyświetlić:
 user.name=nasz login do serwisu Github
 user.email=nasz adres email połaczony z kontem w serwisie Github
 itd.
 Jeśli wszystko się zgadza to znaczy, że dobrze skonfigurowaliśmy uzytkownika w maszynie wirtualnej z użytkownikiem w serwsie Github.
-**4.**Połączenie Git z Github
+**4.** Połączenie Git z Github
 **a.** Połączenie za pomocą protokołu **HTTPS(HyperText Transfer Protocol Secure)** 
 Jest to szyfrowany protokół do przesyłania danych w sieci. Dla odróżnienia **HTTP** jest protokołem do przesyłania danych w sieci ale nieszyfrowanym.
 Jak HTTPS działa w Git.
@@ -33,10 +33,11 @@ logowania do serwerów lub uwierzytelniania w systemach takich jak Github.
 ## Wygenerowanie klucza SSH
 Należy użyć polecenia:
 **ssh-keygen -t abxxxxx -C user.email(z Github)**
+
 Klikamy Enter by zatwierdzić ścieżkę ~/.ssh/id_abxxxxx
 Następnie należy wpisać hasło do klucza ale można pozostawić także puste pole.
 Klucz id_abxxxxx to klucz prywatny.
-Potrzebujemy pary kluczy: jeden to klucz prywatny, drugi to klucz publiczny**(id_abxxxxx.pub)**
+Potrzebujemy pary kluczy: jeden to klucz prywatny, drugi to klucz publiczny **(id_abxxxxx.pub)**
 Znajdziemy go w naszym katalogu domowym **~/.ssh/id_abxxxxx.pub**
 Wówczas należy go skopiować do serwisu Github:
 **Settings**
