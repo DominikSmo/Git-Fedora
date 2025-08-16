@@ -2,6 +2,7 @@
 
  **Opis**
 
- **Jak skonfigurować Git w Fedorze by móc umieszczać repozytoria w serwisie Github z poziomu terminala Linuxa**
+- **Jak skonfigurować Git w Fedorze by móc umieszczać repozytoria w serwisie Github z poziomu terminala Linuxa**
 
- **Autor** Dominik Smolik-repozytorium w ramach nauki administrowaniem systemem Linux
+ **Autor** 
+Dominik Smolik-repozytorium w ramach nauki administrowaniem systemem Linux
